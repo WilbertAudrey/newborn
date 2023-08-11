@@ -1,3 +1,6 @@
+download terlebih dahulu file dengan format zip, kemudian lakukan extract file
+
+UNTUK MENJALANKAN SERVER
 backend - Laravel Lumen 
 
 1. cd newborn
