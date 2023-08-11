@@ -10,7 +10,7 @@ backend - Laravel Lumen
 frontend - React Js MUI
 1. cd newborn
 2. cd frontend
-3. npm install && npm update
+3. npm install(untuk membangun node_modules yang diperlukan)
 4. npm start
 
 running terlebih dahulu backend lumen baru setelah itu frontend react js
