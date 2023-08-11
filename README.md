@@ -1,4 +1,4 @@
-download terlebih dahulu file dengan format zip, kemudian lakukan extract file
+download terlebih dahulu file dengan format zip, kemudian lakukan extract file here menggunakan winrar
 
 UNTUK MENJALANKAN SERVER
 backend - Laravel Lumen 
