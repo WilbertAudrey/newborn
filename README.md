@@ -17,3 +17,4 @@ running terlebih dahulu backend lumen baru setelah itu frontend react js
 untuk backend dan frontend running di 2 terminal yang terpisah.
 
 aplikasi dibangun menggunakan xampp versi 8.1.17, untuk database menggunakan MySQL Yog
+port lumen berjalan di port 8000, sedangkan port react js berjalan di port 3000
