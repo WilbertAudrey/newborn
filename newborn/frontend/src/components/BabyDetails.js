@@ -13,7 +13,6 @@ function BabyDetails() {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
-    // Fetch gender analysis data from the API based on the given ID and selected year
     fetch(`http://localhost:8000/api/analysis?year=${selectedYear}`)
       .then(response => response.json())
       .then(data => setAnalysis(data));
