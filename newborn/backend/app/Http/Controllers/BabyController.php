@@ -29,7 +29,6 @@ class BabyController extends Controller
         'description' => 'nullable|string',
     ]);
 
-    // Ubah format tanggal ke Y-m-d
     $birthDate = \Carbon\Carbon::createFromFormat('d-m-Y', $validatedData['birth_date'])->format('Y-m-d');
 
     $baby = Baby::create([
