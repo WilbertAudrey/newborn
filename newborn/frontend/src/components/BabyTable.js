@@ -7,22 +7,17 @@ function BabyTable() {
   const [babies, setBabies] = useState([]);
 
   useEffect(() => {
-    // Panggil API untuk mendapatkan data bayi pada tanggal tertentu
-    // Ganti URL_API dengan URL API Anda
     fetch('http://localhost:8000/api/babies')
       .then(response => response.json())
       .then(data => setBabies(data));
   }, []);
 
   const handleDelete = (id) => {
-    // Mengirim permintaan DELETE ke API untuk menghapus bayi dengan ID tertentu
     fetch(`http://localhost:8000/api/babies/${id}`, {
       method: 'DELETE',
     })
       .then(response => {
         if (response.ok) {
-          // Jika penghapusan berhasil, perbarui daftar bayi dengan data terbaru
-          // Anda dapat memanggil kembali API untuk mendapatkan data terbaru atau melakukan update state
           setBabies(prevBabies => prevBabies.filter(baby => baby.id !== id));
         }
       })
