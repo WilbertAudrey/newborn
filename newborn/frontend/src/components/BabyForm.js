@@ -34,7 +34,6 @@ function BabyForm() {
 
  const handleSubmit = e => {
   e.preventDefault();
-  // Ubah format tanggal dari "Y-m-d" menjadi "d-m-Y"
   const formattedDate = baby.birth_date.split('-').reverse().join('-');
   
   const url = id ? `http://localhost:8000/api/babies/${id}` : 'http://localhost:8000/api/babies';
