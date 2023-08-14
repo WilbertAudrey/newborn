@@ -4,9 +4,7 @@ function AnalysisTable() {
   const [analysisData, setAnalysisData] = useState([]);
 
   useEffect(() => {
-    // Panggil API untuk mendapatkan data analisis
-    // Ganti URL_API dengan URL API Anda
-    fetch('URL_API/api/analysis')
+fetch('URL_API/api/analysis')
       .then(response => response.json())
       .then(data => setAnalysisData(data));
   }, []);
