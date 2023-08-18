@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Baby extends Model
 {
     protected $fillable = [
-        'mother_name', 'mother_age', 'gender', 'birth_date', 'pregnancy_age', 'height', 'weight', 'description',
+        'mom_id', 'gender', 'birth_date', 'pregnancy_age', 'height', 'weight', 'description',
+        'infant_condition', 'birth_process',
     ];
+
+    public function mom()
+    {
+        return $this->belongsTo(Mom::class);
+    }
 }
+
