@@ -32,8 +32,8 @@ class BabyController extends Controller
 
         $validatedData = $request->all();
         $mom = Mom::where('name', $validatedData['mom_name'])->first();
-        $validatedData['mom_id'] = $mom->id; // Get mom_id from mom_name
-        unset($validatedData['mom_name']); // Remove mom_name from the data
+        $validatedData['mom_id'] = $mom->id;
+        unset($validatedData['mom_name']);
         $validatedData['birth_date'] = Carbon::createFromFormat('d-m-Y', $validatedData['birth_date'])->format('Y-m-d');
 
         $baby = Baby::create($validatedData);
@@ -74,8 +74,8 @@ class BabyController extends Controller
 
         $validatedData = $request->all();
         $mom = Mom::where('name', $validatedData['mom_name'])->first();
-        $validatedData['mom_id'] = $mom->id; // Get mom_id from mom_name
-        unset($validatedData['mom_name']); // Remove mom_name from the data
+        $validatedData['mom_id'] = $mom->id;
+        unset($validatedData['mom_name']);
         if (isset($validatedData['birth_date'])) {
             $validatedData['birth_date'] = Carbon::createFromFormat('d-m-Y', $validatedData['birth_date'])->format('Y-m-d');
         }
